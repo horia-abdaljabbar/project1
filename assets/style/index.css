@@ -1,0 +1,639 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  height: 100vh;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  color: #969696;
+}
+
+.container {
+  width: calc(100% - 120px);
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+/**************************************************************header***************************************************/
+header {
+  background-color: #fff;
+  box-shadow: 0px 1.64744px 8.2372px 0px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width:100%;
+  top: 0;
+  z-index: 10;
+}
+header .row {
+  height: 50px;
+}
+
+header .logo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+}
+
+header img,
+footer .footer-logo img {
+  width: 20px;
+  height: 20px;
+}
+
+header .name {
+  font-size: 11px;
+  color: #545be8;
+  font-family: "Roboto", sans-serif;
+}
+
+header ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+header ul li a {
+  color: #101928;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+
+header ul .active {
+  font-weight: 700;
+}
+
+header .links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+header .links a {
+  font-family: "Inter", sans-serif;
+  padding: 5px 33px;
+  border: 1px solid #545be8;
+  border-radius: 6px;
+  font-size: 13px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+header .links .login {
+  color: #545be8;
+}
+
+header .links .register {
+  color: #fff;
+  background-color: #545be8;
+}
+/************************************************main*****************************************************************/
+
+/***********************************************course-description****************************************************/
+.course-description {
+  background: #f5f5f5;
+  margin-top: 50px;
+  height: 350px;
+  padding: 7px 0;
+}
+.course-description .row {
+  justify-content: flex-start;
+  gap: 30px;
+}
+.course-description .course-desc-start {
+  width: calc((100% - 30px) / 2);
+}
+
+.course-description .course-desc-end {
+  width: calc((100% - 30px) / 2);
+  text-align: right;
+}
+
+.course-description .course-desc-start {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+  gap: 30px;
+  font-size: 15px;
+}
+
+.course-description .course-desc-start .begins,
+.course-description .course-desc-start .course-span {
+  color: #545be8;
+  font-weight: 700;
+}
+
+.course-description .course-desc-start h1 {
+  color: #141e32;
+  font-size: 30px;
+}
+
+.course-description .course-desc-start h1,
+.course-description .course-desc-start a,
+.course-description .course-desc-start span {
+  text-transform: capitalize;
+}
+
+.course-description .course-desc-start h1,
+.course-description .course-desc-start p {
+  font-family: "Poppins", sans-serif;
+}
+
+.course-description .course-desc-start .course-desc-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.course-description .course-desc-links .register,
+.course-description .course-desc-links .play-video-section {
+  padding: 5px 33px;
+  border-radius: 6px;
+  font-size: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.course-description .course-desc-links .register {
+  border: 1px solid #545be8;
+  background-color: #545be8;
+  color: #fff;
+}
+
+.course-description .course-desc-links .play-video-section {
+  color: #141e32;
+  background: #f5f5f5;
+  border: 1px solid #f5f5f5;
+  gap: 5px;
+  font-weight: 700;
+  padding: 5px 20px;
+}
+.course-description .course-desc-links .play-video-section img {
+  width: 20px;
+  height: 20px;
+}
+
+.course-description .course-desc-end img {
+  width: 50%;
+}
+
+/******************************************course-information************************************/
+
+.course-information {
+  margin-top: 50px;
+}
+
+.course-information .row {
+  gap: 20px;
+}
+.course-information .course-information-start {
+  width: calc((100% - 20px) /2);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "Poppins", sans-serif;
+
+}
+.available-courses .available-end span,
+.course-information .course-information-start span,
+.selected-course .selected-course-end span {
+  text-transform: uppercase;
+  color: #545be8;
+  font-family: "Inter", sans-serif;
+}
+
+.available-courses .available-end h2,
+.course-information .course-information-start h2,
+.selected-course .selected-course-end h2 {
+  color: #141e32;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.course-information .course-information-end {
+  width: calc((100% - 20px ) / 2);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: flex-end;
+}
+
+.course-information .course-information-end .card-info {
+  width: calc((100% - 100px) / 3);
+  padding: 30px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 5px;
+  background: #545be8;
+}
+
+.course-information .course-information-end .card-info .info-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.course-information .course-information-end .card-info .info-icon img {
+  width: 20px;
+}
+
+.course-information .course-information-end h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.course-information .course-information-end p {
+  color: #ddd;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+}
+/****************************************selected-course*******************************************/
+
+.selected-course {
+  height: 350px;
+  margin-top: 50px;
+  background: linear-gradient(180deg, #545be8 0%, #272db0 100%);
+}
+
+.selected-course .row {
+  gap: 30px;
+}
+
+.selected-course .selected-course-start img {
+  width: 50%;
+}
+
+.selected-course .selected-course-end,
+.selected-course .selected-course-start {
+  width: calc((100% - 30px) / 2);
+  padding: 30px 0;
+}
+
+.selected-course .selected-course-end {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 25px;
+  padding-left: 20px;
+}
+
+.selected-course .selected-course-end span {
+  color: #f0c932;
+}
+
+.selected-course .selected-course-end h2 {
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.selected-course .selected-course-end p {
+  color: #ddd;
+}
+
+.selected-course .selected-course-end .row .num-info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.selected-course .selected-course-end .row .num-info .title {
+  text-align: center;
+}
+
+.selected-course .selected-course-end .row .num-info .num {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.selected-course .selected-course-end .row .title {
+  color: #ddd;
+  font-size: 15px;
+  text-transform: capitalize;
+  font-family: "Inter", sans-serif;
+}
+
+/****************************************available-courses***************************************/
+
+.available-courses {
+  margin-top: 50px;
+}
+
+.available-courses .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.available-courses .available-start {
+  width: calc((100% - 30px) / 2);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.available-courses .available-end {
+  width: calc((100% - 30px) / 2);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  gap: 30px;
+}
+
+.available-courses .available-start .course {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  width: calc((100% - 20px) / 2);
+  height: 280px;
+  gap: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+
+.available-courses .available-start .course-card {
+  position: relative;
+  border-radius: 10px;
+}
+
+.available-courses .available-start .course img {
+  width: 100%;
+  height: 170px;
+  display: flex;
+  filter: brightness(0.9);
+}
+
+.available-courses .best-cost-course {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: absolute;
+  text-transform: capitalize;
+  font-weight: 700;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 5px;
+}
+
+.available-courses .best-cost-course .best-course {
+  font-size: 12px;
+  padding: 7px;
+  background-color: #545be8;
+  align-self: flex-start;
+}
+
+.available-courses .best-cost-course .cost {
+  font-size: 15px;
+  align-self: flex-end;
+}
+
+.available-courses .available-start .row {
+  padding: 5px;
+}
+
+.available-courses .available-start .row h3 {
+  font-size: 17px;
+  color: #141e32;
+}
+
+.available-courses .available-start .row .views {
+  font-size: 13px;
+  color: #545be8;
+}
+
+.available-courses .available-start .row1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 13px;
+  padding: 5px;
+  color: #969696;
+  font-size: 13px;
+}
+
+.available-courses .available-end h2,
+.available-courses .available-end a,
+.course-information .course-information-start h2 {
+  text-transform: capitalize;
+}
+
+.available-courses .available-end a {
+  color: #fff;
+  font-size: 13px;
+  background-color: #545be8;
+  display: flex;
+  width: 100px;
+  padding: 5px 0;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+/************************************************testimonials******************************************************/
+
+.testimonials {
+  margin-top: 50px;
+}
+.testimonials h2{
+  color:  #0D1222;
+text-align: center;
+font-family: Mada;
+font-size: 30px;
+text-transform: capitalize;
+margin-bottom: 40px;
+font-family: 'Mada', sans-serif;
+
+}
+.testimonials .row {
+  gap: 20px;
+}
+
+.testimonial .testimonial-card {
+  width: calc((100% - 50px) / 2);
+
+}
+
+.testimonials .testimonial-card .testimonial-profile img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  align-self: center;
+}
+
+.testimonials .testimonial-card .testimonial {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #ffffff;
+  padding: 30px;
+  box-shadow: 0px 1.64744px 8.2372px 0px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.testimonials .testimonial-card .testimonial::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+  right: 0;
+  border-top: 40px solid #e3e2e2;
+  border-left: 40px solid transparent;
+}
+
+.testimonials .testimonial-card .testimonial h3 {
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.testimonials .testimonial-card .testimonial q,
+.testimonials .testimonial-card .testimonial span {
+  color: #969696;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+}
+
+.testimonials .testimonial-card .testimonial-profile {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.testimonials .testimonial-card .testimonial-info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/************************************************ footer***********************************************************/
+
+footer {
+  background-color: #393e46;
+  height: 250px;
+  margin-top: 20px;
+}
+
+footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+footer .footer-start,
+footer .footer-end {
+  width: calc((100% - 30px) / 2);
+}
+
+footer .footer-start {
+  padding: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
+}
+
+footer .footer-logo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  color: #fff;
+}
+
+footer .footer-start {
+  color: #f4f4f4;
+  font-size: 10px;
+}
+
+footer .footer-start .footer-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+footer .footer-start .footer-icons img {
+  border: 0.412px solid #fff;
+  width: 17px;
+  height: 17px;
+  padding: 4px;
+  box-sizing: content-box;
+}
+
+footer .footer-end .footer-items {
+  display: flex;
+  flex-wrap: wrap;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+  padding-top: 30px;
+  justify-content: space-evenly;
+}
+
+footer .footer-end .footer-item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+footer .footer-end .footer-item nav {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 5px;
+  color: #f4f4f4;
+  font-size: 12px;
+}
+
+footer .footer-end .footer-items h3 {
+  color: #fff;
+  font-size: 15px;
+}
